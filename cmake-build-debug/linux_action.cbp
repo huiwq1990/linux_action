@@ -17,6 +17,46 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="mmap_demo1">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/mmap_demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 mmap_demo1"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mmap_demo1/fast">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/mmap_demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 mmap_demo1/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
 				<Option type="4"/>
@@ -160,6 +200,9 @@
 		</Build>
 		<Unit filename="/home/vagrant/Desktop/jato/linux_action/io/readwrite_demo.c">
 			<Option target="readwrite_demo"/>
+		</Unit>
+		<Unit filename="/home/vagrant/Desktop/jato/linux_action/mmap/mmap_demo.c">
+			<Option target="mmap_demo1"/>
 		</Unit>
 		<Unit filename="/home/vagrant/Desktop/jato/linux_action/tcp/demo_tcp_client.c">
 			<Option target="demo_tcp_client"/>

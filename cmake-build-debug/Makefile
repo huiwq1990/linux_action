@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mmap_demo1
+
+# Build rule for target.
+mmap_demo1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mmap_demo1
+.PHONY : mmap_demo1
+
+# fast build rule for target.
+mmap_demo1/fast:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/build
+.PHONY : mmap_demo1/fast
+
+#=============================================================================
 # Target rules for targets named readwrite_demo
 
 # Build rule for target.
@@ -176,6 +189,33 @@ io/readwrite_demo.c.s:
 	$(MAKE) -f CMakeFiles/readwrite_demo.dir/build.make CMakeFiles/readwrite_demo.dir/io/readwrite_demo.c.s
 .PHONY : io/readwrite_demo.c.s
 
+mmap/mmap_demo.o: mmap/mmap_demo.c.o
+
+.PHONY : mmap/mmap_demo.o
+
+# target to build an object file
+mmap/mmap_demo.c.o:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/mmap/mmap_demo.c.o
+.PHONY : mmap/mmap_demo.c.o
+
+mmap/mmap_demo.i: mmap/mmap_demo.c.i
+
+.PHONY : mmap/mmap_demo.i
+
+# target to preprocess a source file
+mmap/mmap_demo.c.i:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/mmap/mmap_demo.c.i
+.PHONY : mmap/mmap_demo.c.i
+
+mmap/mmap_demo.s: mmap/mmap_demo.c.s
+
+.PHONY : mmap/mmap_demo.s
+
+# target to generate assembly for a file
+mmap/mmap_demo.c.s:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/mmap/mmap_demo.c.s
+.PHONY : mmap/mmap_demo.c.s
+
 tcp/demo_tcp_client.o: tcp/demo_tcp_client.c.o
 
 .PHONY : tcp/demo_tcp_client.o
@@ -236,6 +276,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... mmap_demo1"
 	@echo "... rebuild_cache"
 	@echo "... readwrite_demo"
 	@echo "... demo_tcp_client"
@@ -244,6 +285,9 @@ help:
 	@echo "... io/readwrite_demo.o"
 	@echo "... io/readwrite_demo.i"
 	@echo "... io/readwrite_demo.s"
+	@echo "... mmap/mmap_demo.o"
+	@echo "... mmap/mmap_demo.i"
+	@echo "... mmap/mmap_demo.s"
 	@echo "... tcp/demo_tcp_client.o"
 	@echo "... tcp/demo_tcp_client.i"
 	@echo "... tcp/demo_tcp_client.s"

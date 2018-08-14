@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/vagrant/Desktop/jato/linux_action
 CMAKE_BINARY_DIR = /home/vagrant/Desktop/jato/linux_action/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/mmap_demo1.dir
+
+# All Build rule for target.
+CMakeFiles/mmap_demo1.dir/all:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/depend
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target mmap_demo1"
+.PHONY : CMakeFiles/mmap_demo1.dir/all
+
+# Include target in all.
+all: CMakeFiles/mmap_demo1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mmap_demo1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mmap_demo1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/mmap_demo1.dir/rule
+
+# Convenience name for target.
+mmap_demo1: CMakeFiles/mmap_demo1.dir/rule
+
+.PHONY : mmap_demo1
+
+# clean rule for target.
+CMakeFiles/mmap_demo1.dir/clean:
+	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/clean
+.PHONY : CMakeFiles/mmap_demo1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/mmap_demo1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/readwrite_demo.dir
 
 # All Build rule for target.
 CMakeFiles/readwrite_demo.dir/all:
 	$(MAKE) -f CMakeFiles/readwrite_demo.dir/build.make CMakeFiles/readwrite_demo.dir/depend
 	$(MAKE) -f CMakeFiles/readwrite_demo.dir/build.make CMakeFiles/readwrite_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target readwrite_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target readwrite_demo"
 .PHONY : CMakeFiles/readwrite_demo.dir/all
 
 # Include target in all.

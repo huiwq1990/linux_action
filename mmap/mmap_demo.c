@@ -5,17 +5,43 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <error.h>
+#include <string.h>
+#include<unistd.h>
+#include <errno.h>
 
 #define BUF_SIZE 100
 
 //http://soledede.iteye.com/blog/2072596
 
-void  main(){{
+int touchFile(char* fileName){
+
+    // O_CREAT 若欲打开的文件不存在则自动建立该文件。
+    // O_TRUNC 若文件存在并且以可写的方式打开时，此旗标会令文件长度清为0，而原来存于该文件的资料也会消失。
+    int fd=open(fileName,O_RDWR|O_TRUNC|O_CREAT,0777);
+    if(fd==-1)
+    {
+        printf("open error is %s\n",strerror(errno));
+    }
+    else
+    {
+        //打印文件描述符号
+        printf("success fd = %d\n",fd);
+        char buf[100];
+        memset(buf,0,sizeof(buf));
+        strcpy(buf,"hello world\n");
+        write(fd,buf,strlen(buf));
+        close(fd);
+    }
+    return 0;
+
+}
+
+int main(int argc, char *argv[]){
     int fd, nread, i;
     struct stat sb;
     char *mapped, buf[BUF_SIZE];
 
-    char fileName = "/tmp/mmap_test";
+    char * fileName = "/tmp/mmaptest2";
 
     touchFile(fileName);
 
@@ -45,7 +71,7 @@ void  main(){{
     printf("%s", mapped);
 
     /* 修改一个字符,同步到磁盘文件 */
-    mapped[20] = '9';
+    mapped[0] = '9';
     if ((msync((void *)mapped, sb.st_size, MS_SYNC)) == -1) {
         perror("msync");
     }
@@ -56,27 +82,4 @@ void  main(){{
     }
 
     return 0;
-}
-
-void touchFile(char* fileName){
-
-    // O_CREAT 若欲打开的文件不存在则自动建立该文件。
-    // O_TRUNC 若文件存在并且以可写的方式打开时，此旗标会令文件长度清为0，而原来存于该文件的资料也会消失。
-    int fd=open(fileName,O_RDWR|O_TRUNC|O_CREAT);
-        if(fd==-1)
-        {
-            printf("error is %s\n",strerror(errno));
-        }
-        else
-        {
-            //打印文件描述符号
-            printf("success fd = %d\n",fd);
-            char buf[100];
-            memset(buf,0,sizeof(buf));
-            strcpy(buf,"hello world\n");
-            write(fd,buf,strlen(buf));
-            close(fd);
-        }
-        return 0;
-
 }
