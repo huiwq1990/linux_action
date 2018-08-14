@@ -1,5 +1,3 @@
-
-
 #include <sys/mman.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -10,18 +8,23 @@
 
 #define BUF_SIZE 100
 
-int main(int argc, char **argv)
-{
+//http://soledede.iteye.com/blog/2072596
+
+void  main(){{
     int fd, nread, i;
     struct stat sb;
     char *mapped, buf[BUF_SIZE];
+
+    char fileName = "/tmp/mmap_test";
+
+    touchFile(fileName);
 
     for (i = 0; i < BUF_SIZE; i++) {
         buf[i] = '#';
     }
 
     /* 打开文件 */
-    if ((fd = open(argv[1], O_RDWR)) < 0) {
+    if ((fd = open(fileName, O_RDWR)) < 0) {
         perror("open");
     }
 
@@ -53,4 +56,27 @@ int main(int argc, char **argv)
     }
 
     return 0;
+}
+
+void touchFile(char* fileName){
+
+    // O_CREAT 若欲打开的文件不存在则自动建立该文件。
+    // O_TRUNC 若文件存在并且以可写的方式打开时，此旗标会令文件长度清为0，而原来存于该文件的资料也会消失。
+    int fd=open(fileName,O_RDWR|O_TRUNC|O_CREAT);
+        if(fd==-1)
+        {
+            printf("error is %s\n",strerror(errno));
+        }
+        else
+        {
+            //打印文件描述符号
+            printf("success fd = %d\n",fd);
+            char buf[100];
+            memset(buf,0,sizeof(buf));
+            strcpy(buf,"hello world\n");
+            write(fd,buf,strlen(buf));
+            close(fd);
+        }
+        return 0;
+
 }
