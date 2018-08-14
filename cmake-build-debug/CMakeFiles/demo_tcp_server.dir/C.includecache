@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vagrant/Desktop/jato/linux_action/tcp/demo_tcp_server.c
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+errno.h
+-
+string.h
+-
+sys/types.h
+-
+time.h
+-
+
