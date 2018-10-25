@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/readwrite_demo.dir/io/readwrite_demo.c.o  -o readwrite_demo 

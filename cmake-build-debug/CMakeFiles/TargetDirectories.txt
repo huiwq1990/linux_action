@@ -1,8 +1,0 @@
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/fock_file_share.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/fork_var_share.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/mmap_demo1.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/readwrite_demo.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/demo_tcp_client.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/demo_tcp_server.dir
