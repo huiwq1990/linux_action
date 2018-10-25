@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/vagrant/Desktop/jato/linux_action/epoll-demo/simple-client.c" "/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/demo_tcp_client.dir/epoll-demo/simple-client.c.o"
   "/home/vagrant/Desktop/jato/linux_action/tcp/demo_tcp_client.c" "/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles/demo_tcp_client.dir/tcp/demo_tcp_client.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_tcp_client.dir/tcp/demo_tcp_client.c.o"
+  "CMakeFiles/demo_tcp_client.dir/epoll-demo/simple-client.c.o"
   "demo_tcp_client.pdb"
   "demo_tcp_client"
 )

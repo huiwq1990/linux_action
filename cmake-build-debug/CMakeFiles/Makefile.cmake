@@ -41,6 +41,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/fock_file_share.dir/DependInfo.cmake"
+  "CMakeFiles/fork_var_share.dir/DependInfo.cmake"
   "CMakeFiles/mmap_demo1.dir/DependInfo.cmake"
   "CMakeFiles/readwrite_demo.dir/DependInfo.cmake"
   "CMakeFiles/demo_tcp_client.dir/DependInfo.cmake"

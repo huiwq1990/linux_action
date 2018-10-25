@@ -17,6 +17,86 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="fock_file_share">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/fock_file_share" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 fock_file_share"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fock_file_share/fast">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/fock_file_share" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 fock_file_share/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork_var_share">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/fork_var_share" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork_var_share"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork_var_share/fast">
+				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/fork_var_share" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork_var_share/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="mmap_demo1">
 				<Option output="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/mmap_demo1" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/vagrant/Desktop/jato/linux_action/cmake-build-debug"/>
@@ -198,6 +278,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/vagrant/Desktop/jato/linux_action/epoll-demo/simple-client.c">
+			<Option target="demo_tcp_client"/>
+		</Unit>
+		<Unit filename="/home/vagrant/Desktop/jato/linux_action/fork/fock_file_share.c">
+			<Option target="fock_file_share"/>
+		</Unit>
+		<Unit filename="/home/vagrant/Desktop/jato/linux_action/fork/fork_var_share.c">
+			<Option target="fork_var_share"/>
+		</Unit>
 		<Unit filename="/home/vagrant/Desktop/jato/linux_action/io/readwrite_demo.c">
 			<Option target="readwrite_demo"/>
 		</Unit>

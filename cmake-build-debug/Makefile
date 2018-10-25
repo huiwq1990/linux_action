@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named fock_file_share
+
+# Build rule for target.
+fock_file_share: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fock_file_share
+.PHONY : fock_file_share
+
+# fast build rule for target.
+fock_file_share/fast:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/build
+.PHONY : fock_file_share/fast
+
+#=============================================================================
+# Target rules for targets named fork_var_share
+
+# Build rule for target.
+fork_var_share: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fork_var_share
+.PHONY : fork_var_share
+
+# fast build rule for target.
+fork_var_share/fast:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/build
+.PHONY : fork_var_share/fast
+
+#=============================================================================
 # Target rules for targets named mmap_demo1
 
 # Build rule for target.
@@ -161,6 +187,87 @@ demo_tcp_server: cmake_check_build_system
 demo_tcp_server/fast:
 	$(MAKE) -f CMakeFiles/demo_tcp_server.dir/build.make CMakeFiles/demo_tcp_server.dir/build
 .PHONY : demo_tcp_server/fast
+
+epoll-demo/simple-client.o: epoll-demo/simple-client.c.o
+
+.PHONY : epoll-demo/simple-client.o
+
+# target to build an object file
+epoll-demo/simple-client.c.o:
+	$(MAKE) -f CMakeFiles/demo_tcp_client.dir/build.make CMakeFiles/demo_tcp_client.dir/epoll-demo/simple-client.c.o
+.PHONY : epoll-demo/simple-client.c.o
+
+epoll-demo/simple-client.i: epoll-demo/simple-client.c.i
+
+.PHONY : epoll-demo/simple-client.i
+
+# target to preprocess a source file
+epoll-demo/simple-client.c.i:
+	$(MAKE) -f CMakeFiles/demo_tcp_client.dir/build.make CMakeFiles/demo_tcp_client.dir/epoll-demo/simple-client.c.i
+.PHONY : epoll-demo/simple-client.c.i
+
+epoll-demo/simple-client.s: epoll-demo/simple-client.c.s
+
+.PHONY : epoll-demo/simple-client.s
+
+# target to generate assembly for a file
+epoll-demo/simple-client.c.s:
+	$(MAKE) -f CMakeFiles/demo_tcp_client.dir/build.make CMakeFiles/demo_tcp_client.dir/epoll-demo/simple-client.c.s
+.PHONY : epoll-demo/simple-client.c.s
+
+fork/fock_file_share.o: fork/fock_file_share.c.o
+
+.PHONY : fork/fock_file_share.o
+
+# target to build an object file
+fork/fock_file_share.c.o:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/fork/fock_file_share.c.o
+.PHONY : fork/fock_file_share.c.o
+
+fork/fock_file_share.i: fork/fock_file_share.c.i
+
+.PHONY : fork/fock_file_share.i
+
+# target to preprocess a source file
+fork/fock_file_share.c.i:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/fork/fock_file_share.c.i
+.PHONY : fork/fock_file_share.c.i
+
+fork/fock_file_share.s: fork/fock_file_share.c.s
+
+.PHONY : fork/fock_file_share.s
+
+# target to generate assembly for a file
+fork/fock_file_share.c.s:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/fork/fock_file_share.c.s
+.PHONY : fork/fock_file_share.c.s
+
+fork/fork_var_share.o: fork/fork_var_share.c.o
+
+.PHONY : fork/fork_var_share.o
+
+# target to build an object file
+fork/fork_var_share.c.o:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/fork/fork_var_share.c.o
+.PHONY : fork/fork_var_share.c.o
+
+fork/fork_var_share.i: fork/fork_var_share.c.i
+
+.PHONY : fork/fork_var_share.i
+
+# target to preprocess a source file
+fork/fork_var_share.c.i:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/fork/fork_var_share.c.i
+.PHONY : fork/fork_var_share.c.i
+
+fork/fork_var_share.s: fork/fork_var_share.c.s
+
+.PHONY : fork/fork_var_share.s
+
+# target to generate assembly for a file
+fork/fork_var_share.c.s:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/fork/fork_var_share.c.s
+.PHONY : fork/fork_var_share.c.s
 
 io/readwrite_demo.o: io/readwrite_demo.c.o
 
@@ -276,12 +383,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... fock_file_share"
+	@echo "... fork_var_share"
 	@echo "... mmap_demo1"
 	@echo "... rebuild_cache"
 	@echo "... readwrite_demo"
 	@echo "... demo_tcp_client"
 	@echo "... edit_cache"
 	@echo "... demo_tcp_server"
+	@echo "... epoll-demo/simple-client.o"
+	@echo "... epoll-demo/simple-client.i"
+	@echo "... epoll-demo/simple-client.s"
+	@echo "... fork/fock_file_share.o"
+	@echo "... fork/fock_file_share.i"
+	@echo "... fork/fock_file_share.s"
+	@echo "... fork/fork_var_share.o"
+	@echo "... fork/fork_var_share.i"
+	@echo "... fork/fork_var_share.s"
 	@echo "... io/readwrite_demo.o"
 	@echo "... io/readwrite_demo.i"
 	@echo "... io/readwrite_demo.s"

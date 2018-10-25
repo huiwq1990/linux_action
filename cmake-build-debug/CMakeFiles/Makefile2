@@ -60,13 +60,87 @@ CMAKE_SOURCE_DIR = /home/vagrant/Desktop/jato/linux_action
 CMAKE_BINARY_DIR = /home/vagrant/Desktop/jato/linux_action/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/fock_file_share.dir
+
+# All Build rule for target.
+CMakeFiles/fock_file_share.dir/all:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/depend
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target fock_file_share"
+.PHONY : CMakeFiles/fock_file_share.dir/all
+
+# Include target in all.
+all: CMakeFiles/fock_file_share.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fock_file_share.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fock_file_share.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/fock_file_share.dir/rule
+
+# Convenience name for target.
+fock_file_share: CMakeFiles/fock_file_share.dir/rule
+
+.PHONY : fock_file_share
+
+# clean rule for target.
+CMakeFiles/fock_file_share.dir/clean:
+	$(MAKE) -f CMakeFiles/fock_file_share.dir/build.make CMakeFiles/fock_file_share.dir/clean
+.PHONY : CMakeFiles/fock_file_share.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/fock_file_share.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fork_var_share.dir
+
+# All Build rule for target.
+CMakeFiles/fork_var_share.dir/all:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/depend
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target fork_var_share"
+.PHONY : CMakeFiles/fork_var_share.dir/all
+
+# Include target in all.
+all: CMakeFiles/fork_var_share.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fork_var_share.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fork_var_share.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/fork_var_share.dir/rule
+
+# Convenience name for target.
+fork_var_share: CMakeFiles/fork_var_share.dir/rule
+
+.PHONY : fork_var_share
+
+# clean rule for target.
+CMakeFiles/fork_var_share.dir/clean:
+	$(MAKE) -f CMakeFiles/fork_var_share.dir/build.make CMakeFiles/fork_var_share.dir/clean
+.PHONY : CMakeFiles/fork_var_share.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/fork_var_share.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/mmap_demo1.dir
 
 # All Build rule for target.
 CMakeFiles/mmap_demo1.dir/all:
 	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/depend
 	$(MAKE) -f CMakeFiles/mmap_demo1.dir/build.make CMakeFiles/mmap_demo1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target mmap_demo1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target mmap_demo1"
 .PHONY : CMakeFiles/mmap_demo1.dir/all
 
 # Include target in all.
@@ -103,7 +177,7 @@ clean: CMakeFiles/mmap_demo1.dir/clean
 CMakeFiles/readwrite_demo.dir/all:
 	$(MAKE) -f CMakeFiles/readwrite_demo.dir/build.make CMakeFiles/readwrite_demo.dir/depend
 	$(MAKE) -f CMakeFiles/readwrite_demo.dir/build.make CMakeFiles/readwrite_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target readwrite_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target readwrite_demo"
 .PHONY : CMakeFiles/readwrite_demo.dir/all
 
 # Include target in all.
@@ -140,7 +214,7 @@ clean: CMakeFiles/readwrite_demo.dir/clean
 CMakeFiles/demo_tcp_client.dir/all:
 	$(MAKE) -f CMakeFiles/demo_tcp_client.dir/build.make CMakeFiles/demo_tcp_client.dir/depend
 	$(MAKE) -f CMakeFiles/demo_tcp_client.dir/build.make CMakeFiles/demo_tcp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target demo_tcp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target demo_tcp_client"
 .PHONY : CMakeFiles/demo_tcp_client.dir/all
 
 # Include target in all.
@@ -150,7 +224,7 @@ all: CMakeFiles/demo_tcp_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo_tcp_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_tcp_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/demo_tcp_client.dir/rule
@@ -177,7 +251,7 @@ clean: CMakeFiles/demo_tcp_client.dir/clean
 CMakeFiles/demo_tcp_server.dir/all:
 	$(MAKE) -f CMakeFiles/demo_tcp_server.dir/build.make CMakeFiles/demo_tcp_server.dir/depend
 	$(MAKE) -f CMakeFiles/demo_tcp_server.dir/build.make CMakeFiles/demo_tcp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target demo_tcp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/Desktop/jato/linux_action/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target demo_tcp_server"
 .PHONY : CMakeFiles/demo_tcp_server.dir/all
 
 # Include target in all.
