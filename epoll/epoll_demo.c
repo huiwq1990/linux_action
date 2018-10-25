@@ -1,3 +1,6 @@
+/**
+ * https://www.jianshu.com/p/ee381d365a29
+ */
 #include <stdio.h>
 #include <sys/epoll.h>
 #include <sys/socket.h>
@@ -46,7 +49,7 @@ int main() {
     int result = 0;
     struct epoll_event ev, event[MAX_EVENT];
     // 绑定的地址
-    const char * const local_addr = "192.168.0.45";
+    const char * const local_addr = "localhost";
     struct sockaddr_in server_addr = { 0 };
 
     listenfd = socket(AF_INET, SOCK_STREAM, 0);
