@@ -1,0 +1,1 @@
+cmd_/home/vagrant/Github/linux_action/kernel/multifile/multifile.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/vagrant/Github/linux_action/kernel/multifile/multifile.ko /home/vagrant/Github/linux_action/kernel/multifile/multifile.o /home/vagrant/Github/linux_action/kernel/multifile/multifile.mod.o
