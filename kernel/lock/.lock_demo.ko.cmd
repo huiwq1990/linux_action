@@ -1,0 +1,1 @@
+cmd_/home/vagrant/Github/linux_action/kernel/lock/lock_demo.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/vagrant/Github/linux_action/kernel/lock/lock_demo.ko /home/vagrant/Github/linux_action/kernel/lock/lock_demo.o /home/vagrant/Github/linux_action/kernel/lock/lock_demo.mod.o
