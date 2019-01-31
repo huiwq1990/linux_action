@@ -1,0 +1,1 @@
+cmd_/home/vagrant/Github/linux_action/kernel/memory/tmain.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/vagrant/Github/linux_action/kernel/memory/tmain.ko /home/vagrant/Github/linux_action/kernel/memory/tmain.o /home/vagrant/Github/linux_action/kernel/memory/tmain.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/vagrant/Github/linux_action/kernel/rwsem/rcu_demo_v2.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/vagrant/Github/linux_action/kernel/rwsem/rcu_demo_v2.ko /home/vagrant/Github/linux_action/kernel/rwsem/rcu_demo_v2.o /home/vagrant/Github/linux_action/kernel/rwsem/rcu_demo_v2.mod.o
