@@ -1,3 +1,6 @@
+/**
+ * https://www.cnblogs.com/Anker/p/7071849.html
+ * */
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>  
@@ -26,7 +29,7 @@ int worker(int listenfd, int i)
             printf("port: %d \n",client_addr.sin_port);
         } else {
             printf("worker %d accept a connection failed,error:%s", i, strerror(errno));
-　　　　　　　　 close(connfd);
+            close(connfd);
         }
     }
     return 0;
