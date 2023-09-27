@@ -5,12 +5,10 @@ $script = <<SCRIPT
 echo "Installing Software..."
 SCRIPT
 
-
 Vagrant.configure(2) do |config|
 
   config.vm.box = "fasmat/ubuntu2204-desktop"
-  config.vm.provision "shell", inline: $script, privileged: false
-  config.vm.synced_folder ".", "/hostshare"
+  config.vm.synced_folder ".", "/hostshare", type: "virtualbox", automount: true, create: true, owner: "vagrant", group: "vagrant"
 
   # Kubernetes Jumper Server
   config.vm.define "linux" do |node|
@@ -27,6 +25,15 @@ Vagrant.configure(2) do |config|
       v.memory  = 8096
       v.cpus    =  4
     end
+    # vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+    # vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+    # https://hameedullah.com/vagrant-101-basic-virtual-machine-customizations.html
+    # Disable USB
+    node.customize ["modifyvm", :id, "--usb", "off"]
+    node.customize ["modifyvm", :id, "--usbehci", "off"]
+    # https://gist.github.com/mxey/ce6911724acee4517692bf683ee90624
+    # Prevent VirtualBox from interfering with host audio stack
+    node.customize ["modifyvm", :id, "--audio", "none"]
 
     node.vm.provision "shell", privileged: true, inline: $script
   end
