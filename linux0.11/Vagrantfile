@@ -20,20 +20,21 @@ Vagrant.configure(2) do |config|
     #node.vm.network "public_network"
     node.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
     #node.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
-    node.vm.provider "virtualbox" do |v|
-      v.name    = "linux"
-      v.memory  = 8096
-      v.cpus    =  4
+    node.vm.provider "virtualbox" do |vb|
+      vb.name    = "linux"
+      vb.memory  = 8096
+      vb.cpus    =  4
+
+      # vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+      # vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+      # https://hameedullah.com/vagrant-101-basic-virtual-machine-customizations.html
+      # Disable USB
+      vb.customize ["modifyvm", :id, "--usb", "off"]
+      vb.customize ["modifyvm", :id, "--usbehci", "off"]
+      # https://gist.github.com/mxey/ce6911724acee4517692bf683ee90624
+      # Prevent VirtualBox from interfering with host audio stack
+      vb.customize ["modifyvm", :id, "--audio", "none"]
     end
-    # vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
-    # vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
-    # https://hameedullah.com/vagrant-101-basic-virtual-machine-customizations.html
-    # Disable USB
-    node.customize ["modifyvm", :id, "--usb", "off"]
-    node.customize ["modifyvm", :id, "--usbehci", "off"]
-    # https://gist.github.com/mxey/ce6911724acee4517692bf683ee90624
-    # Prevent VirtualBox from interfering with host audio stack
-    node.customize ["modifyvm", :id, "--audio", "none"]
 
     node.vm.provision "shell", privileged: true, inline: $script
   end
