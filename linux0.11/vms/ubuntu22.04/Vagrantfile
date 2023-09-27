@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$script = <<SCRIPT
+echo "Installing Software..."
+SCRIPT
+
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "fasmat/ubuntu2204-desktop"
+  config.vm.provision "shell", inline: $script, privileged: false
+  config.vm.synced_folder ".", "/hostshare"
+
+  # Kubernetes Jumper Server
+  config.vm.define "linux" do |node|
+  
+    node.vm.box               = "fasmat/ubuntu2204-desktop"
+    node.vm.box_check_update  = false
+    node.vm.hostname          = "linux"
+
+    #node.vm.network "public_network"
+    node.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
+    #node.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
+    node.vm.provider "virtualbox" do |v|
+      v.name    = "linux"
+      v.memory  = 8096
+      v.cpus    =  4
+    end
+
+    node.vm.provision "shell", privileged: true, inline: $script
+  end
+  
+end
